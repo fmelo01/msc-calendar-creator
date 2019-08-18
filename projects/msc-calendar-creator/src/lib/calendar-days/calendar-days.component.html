@@ -1,0 +1,22 @@
+<div class="cal-days">
+
+  <ng-template ngFor [ngForOf]="portalRows">
+
+    <div class="cal-cell-row">
+
+      <ng-template ngFor [ngForOf]="portalColumns">
+
+        <div class="cal-cell cal-day-cell">
+
+        <!-- day component's portal -->
+          <ng-template cdkPortalOutlet #calendarDay>
+          </ng-template>
+        </div>
+
+      </ng-template>
+
+    </div>
+
+  </ng-template>
+
+</div>

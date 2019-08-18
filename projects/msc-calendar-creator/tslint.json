@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "mscCalendarCreator",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "msc-calendar-creator",
+      "kebab-case"
+    ]
+  }
+}

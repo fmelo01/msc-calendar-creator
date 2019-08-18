@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "msc-calendar-creator": [
+        "dist/msc-calendar-creator"
+      ],
+      "msc-calendar-creator/*": [
+        "dist/msc-calendar-creator/*"
+      ]
+    }
   }
 }

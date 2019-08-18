@@ -1,0 +1,43 @@
+.cal-cell-row:hover {
+    background-color: #fafafa;
+}
+
+.cal-days {
+    border: 1px solid #e1e1e1;
+    border-bottom: 0;
+}
+
+.cal-cell-row {
+    display: flex;
+}
+
+.cal-days .cal-cell-row {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.cal-cell {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cal-day-cell {
+    min-height: 70px;
+    &:not(:last-child) {
+        border-right: 1px solid #e1e1e1;
+    }
+}
+
+.cal-day-cell {
+  /* Prevents dragging of images/divs etc */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  align-items: stretch;
+  min-height: 70px;
+  &:not(:last-child) {
+      border-right: 1px solid #e1e1e1;
+  }
+}
