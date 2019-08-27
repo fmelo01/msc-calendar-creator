@@ -11,9 +11,10 @@ export class CalendarDaysHeaderComponent implements OnInit {
 
   @Input() namesFormat: NameFormat;
 
-  constructor(@Inject(LOCALE_ID) private locale: string) {
+  constructor(@Inject(LOCALE_ID) locale: string) {
     moment.locale(locale);
   }
+
   ngOnInit() {
   }
 

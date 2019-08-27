@@ -14,5 +14,8 @@ export * from './lib/shared/calendar-data-source';
 
 // components
 export * from './lib/calendar-panel/calendar-panel.component';
-export * from './lib/calendar-panel/calendar-days-header/calendar-days-header.component';
+export * from './lib/calendar-days-header/calendar-days-header.component';
 export * from './lib/calendar-days/calendar-days.component';
+
+// utils
+export * from './lib/shared/distinct-days';

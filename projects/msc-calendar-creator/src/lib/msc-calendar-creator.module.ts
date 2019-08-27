@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PortalModule } from '@angular/cdk/portal';
 
 import { CalendarPanelComponent } from './calendar-panel/calendar-panel.component';
-import { CalendarDaysHeaderComponent } from './calendar-panel/calendar-days-header/calendar-days-header.component';
+import { CalendarDaysHeaderComponent } from './calendar-days-header/calendar-days-header.component';
 import { CalendarDaysComponent } from './calendar-days/calendar-days.component';
 
 @NgModule({

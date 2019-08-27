@@ -1,26 +1,26 @@
 import { Injectable } from '@angular/core';
+import { DistinctDays } from '@msc/calendar-creator';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SelectDaysService {
-
-  selectedDays: Set<string>;
+  days: DistinctDays;
 
   constructor() {
-    this.selectedDays = new Set<string>();
+    this.days = new DistinctDays();
   }
 
   selectDay(day: Date) {
-    this.selectedDays.add(day.toISOString());
+    this.days.add(day);
   }
 
   unselectDay(day: Date) {
-    this.selectedDays.delete(day.toISOString());
+    this.days.delete(day);
   }
 
   isDaySelected(day: Date): boolean {
-    return this.selectedDays.has(day.toISOString());
+    return this.days.has(day);
   }
 
 }
